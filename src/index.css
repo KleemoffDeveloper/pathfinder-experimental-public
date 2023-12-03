@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+}
+
+input {
+  padding: 8px;
+  border-radius: 8px;
+  color: black;
+}
+
+button {
+  background-color: gray;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  transition: 0.25s;
+}
+
+button:hover {
+  opacity: 75%;
+  transition: 0.25s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.choice {
+  min-width: 100px;
+  min-height: 50px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.choice:hover {
+  box-shadow: 1px 1px 10px white;
+  transition: 0.25s;
+}
+
+.progress-bar {
+  height: 25px;
+}
+
+.loading {
+  animation: rotate 2.5s linear infinite;
+}
+
+.active-story img {
+  max-width: 156px;
+}
+
+.modal {
+  max-width: 640px;
+}
+
+@media screen and (max-width: 650px) {
+  .modal {
+    border-radius: 0;
+    max-width: none;
+  }
+}
