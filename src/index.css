@@ -14,7 +14,7 @@ input {
 }
 
 button {
-  background-color: gray;
+  background-color: rgb(18, 152, 255);
   padding: 8px 16px 8px 16px;
   border-radius: 16px;
   transition: 0.25s;
@@ -60,6 +60,10 @@ button:hover {
 
 .modal {
   max-width: 640px;
+}
+
+.gameplay {
+  min-height: 300px;
 }
 
 @media screen and (max-width: 650px) {
